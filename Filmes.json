@@ -1,27 +1,27 @@
 [
 	{
-		"nome": "De volta para o futuro",
+		"nome_filme": "De volta para o futuro",
 		"gênero": "ficção cientifica/aventura",
-		"data": "1985"
+		"data_lançamento": "1985"
 	},
 	{
-		"nome": "Interstellar",
+		"nome_filme": "Interstellar",
 		"gênero": "ficção cientifica/aventura",
-		"data": "2014"
+		"data_lançamento": "2014"
 	},
 	{
-		"nome": "Guerra mundial Z",
+		"nome_filme": "Guerra mundial Z",
 		"gênero": "ação/terror",
-		"data": "2013"
+		"data_lançamento": "2013"
 	},
 	{
-		"nome": "O rei do show",
+		"nome_filme": "O rei do show",
 		"gênero": "thriller",
-		"data": "2017"
+		"data_lançamento": "2017"
 	},
 	{
-		"nome": "Guerra infinita",
+		"nome_filme": "Guerra infinita",
 		"gênero": "ficção cientifica/ação",
-		"data": "2018"
+		"data_lançamento": "2018"
 	}
 ]
