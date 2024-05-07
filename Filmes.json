@@ -1,0 +1,27 @@
+[
+	{
+		"nome": "De volta para o futuro",
+		"gênero": "ficção cientifica/aventura",
+		"data": "1985"
+	},
+	{
+		"nome": "Interstellar",
+		"gênero": "ficção cientifica/aventura",
+		"data": "2014"
+	},
+	{
+		"nome": "Guerra mundial Z",
+		"gênero": "ação/terror",
+		"data": "2013"
+	},
+	{
+		"nome": "O rei do show",
+		"gênero": "thriller",
+		"data": "2017"
+	},
+	{
+		"nome": "Guerra infinita",
+		"gênero": "ficção cientifica/ação",
+		"data": "2018"
+	}
+]

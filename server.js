@@ -5,28 +5,28 @@ const app = express();
 
 const port = 3001;
 
-const carrosPath = path.join(__dirname, 'carros.json');
-const carrosData = fs.readFileSync(carrosPath, 'utf-8');
-const carros = JSON.parse(carrosData);
+const FilmesPath = path.join(__dirname, 'Filmes.json');
+const FilmesData = fs.readFileSync(FilmesPath, 'utf-8');
+const Filmes = JSON.parse(FilmesData);
 
-function buscarCarroPorNome(nome) {
-    return carros.find(carro => carro.nome.toLowerCase() === nome.toLowerCase());
+function buscarFilmePorNome(nome) {
+    return Filmes.find(Filme => Filme.nome.toLowerCase() === nome.toLowerCase());
 }
 
-app.get('/buscar-carro/:nome', (req, res) => {
-    const nomeDoCarroBuscado = req.params.nome;
-    const carroEncontrado = buscarCarroPorNome(nomeDoCarroBuscado);
+app.get('/buscar-Filme/:nome', (req, res) => {
+    const nomeDoFilmeBuscado = req.params.nome;
+    const FilmeEncontrado = buscarFilmePorNome(nomeDoFilmeBuscado);
 
-    if (carroEncontrado) {
-        const templatePath = path.join(__dirname, 'dadoscarro.html');
+    if (FilmeEncontrado) {
+        const templatePath = path.join(__dirname, 'dadosFilme.html');
         const templateData = fs.readFileSync(templatePath, 'utf-8');
         const html = templateData
-            .replace('{{nome}}', carroEncontrado.nome)
-            .replace('{{desc}}', carroEncontrado.desc)
-            .replace('{{url_info}}', carroEncontrado.url_info);
+            .replace('{{nome}}', FilmeEncontrado.nome)
+            .replace('{{desc}}', FilmeEncontrado.desc)
+            .replace('{{url_info}}', FilmeEncontrado.url_info);
         res.send(html)
         } else {
-        res.send('<h1>Carro não encontrado.</h1>')
+        res.send('<h1>Filme não encontrado.</h1>')
     }
 });
 
